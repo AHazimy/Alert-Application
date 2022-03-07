@@ -9,6 +9,5 @@ i=0
 while i in range(100):    
     x=input("Enter number:\n")
     df=pd.DataFrame([x],columns=["Status"])
-    print(df)
+    print("The current status is: "+str(df.loc[0,'Status']))
     df.to_csv('trial_2.csv', index=False)
-    
